@@ -164,19 +164,19 @@ Let's go! Slide by slide, make it happen
 }
 
 
-#metodologia {
+#metodologia, #impactos {
 	h1 {
 		float: left;
 	}
 
-	.impact {
+	.delayed {
 		opacity: 0;
 		.translateY(100);
 		.transition(opacity 1s ease 1s, transform 1s ease 1s);
 	}
 
 	&.active {
-		.impact {
+		.delayed {
 			opacity: 1;
 			.translateY(0);
 		}
