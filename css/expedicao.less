@@ -1,0 +1,214 @@
+/*
+Font faces
+ */
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
+
+@import 'lesshat.less';
+@import (less) 'animate.css';
+
+body {
+	font-family: Raleway;
+}
+
+ul {
+	list-style: none;
+}
+
+/*
+	Now let's style the presentation steps.
+
+	We start with basics to make sure it displays correctly in everywhere ...
+*/
+
+.step {
+
+	h1 {
+		font-size: 1.5em;
+	}
+
+	position: relative;
+	width: 1200px;
+	padding: 40px;
+	margin: 20px auto;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	-ms-box-sizing:     border-box;
+	-o-box-sizing:      border-box;
+	box-sizing:         border-box;
+
+	font-size: 48px;
+	line-height: 1.5;
+}
+
+
+/*
+	... and we enhance the styles for impress.js.
+
+	Basically we remove the margin and make inactive steps a little bit transparent.
+*/
+.impress-enabled .step {
+	margin: 0;
+	opacity: 0.3;
+
+	.transition(opacity 1s);
+
+	h1 {
+		margin-bottom: 30px;
+
+		.translateY(-100px);
+		.transition(transform 1s);
+	}
+
+	ul {
+		.translateY(100px);
+		.transition(opacity 1s ease .4s, transform 1s ease .5s);
+
+		font-size: .7em;
+	}
+
+	&.active {
+		h1 {
+			opacity: 1;
+			.translateY(0px);
+		}
+		ul {
+			opacity: 1;
+			.translateY(0px);
+		}
+	}
+
+}
+
+
+
+.impress-enabled .step.active { opacity: 1 }
+// step types
+.step.app {
+
+	.phone {
+		.translateX(-400px);
+
+		.transition(transform 1s);
+	}
+
+	.app-profile {
+
+		.translateX(400px);
+
+		.transition(transform 1s);
+
+		img {
+			max-width: 100%;
+			margin: 10px;
+		}
+
+		img.person {
+			width: 70px;
+		}
+	}
+
+	&.active {
+		.phone {
+			opacity: 1;
+			.translateX(0);
+		}
+
+		.app-profile {
+			opacity: 1;
+			.translateX(0);
+		}
+
+	}
+}
+
+.step.full-image {
+	img {
+		width: 90%;
+		margin-right: 5%;
+	}
+}
+
+// phones:
+iframe {
+	border: 0;
+}
+.iphone {
+//    float: left;
+	background-image: url('../img/iphone.png');
+
+	position: relative;
+	width: 413px;
+	height: 725px;
+	background-repeat: no-repeat;
+	iframe {
+
+		position: absolute;
+		top: 122px;
+		left: 32px;
+
+		width: 320px;
+		height: 480px;
+	}
+}
+
+
+
+/*
+Let's go! Slide by slide, make it happen
+ */
+
+/* #1 cover */
+#cover {
+
+}
+
+
+#metodologia {
+	h1 {
+		float: left;
+	}
+
+	.impact {
+		opacity: 0;
+		.translateY(100);
+		.transition(opacity 1s ease 1s, transform 1s ease 1s);
+	}
+
+	&.active {
+		.impact {
+			opacity: 1;
+			.translateY(0);
+		}
+	}
+}
+
+
+#canvas {
+
+	ul {
+		padding: 0;
+		margin-top: 100px;
+	}
+
+	li {
+		font-size: 20px;
+		border: 1px dashed #ccc;
+		margin-bottom: 10px;
+		padding: 10px;
+	}
+
+	img {
+		height: 600px;
+		opacity: 0;
+		.translateX(-100px);
+		.transition(opacity 1s, transform 1s);
+	}
+
+	&.active {
+		img {
+			opacity: 1;
+			.translateX(0px);
+		}
+	}
+}
