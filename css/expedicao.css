@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
+@import 'font-awesome.css';
 /*
 Font faces
  */
@@ -2933,11 +2934,15 @@ Let's go! Slide by slide, make it happen
  */
 /* #1 cover */
 #metodologia h1,
-#impactos h1 {
+#impactos h1,
+#tecnologia h1,
+#nos h1 {
   float: left;
 }
 #metodologia .delayed,
-#impactos .delayed {
+#impactos .delayed,
+#tecnologia .delayed,
+#nos .delayed {
   opacity: 0;
   -webkit-transform: translateY(100px);
   -moz-transform: translateY(100px);
@@ -2950,7 +2955,9 @@ Let's go! Slide by slide, make it happen
   transition: opacity 1s ease 1s,-webkit-transform 1s ease 1s,-moz-transform 1s ease 1s,-o-transform 1s ease 1s,transform 1s ease 1s;
 }
 #metodologia.active .delayed,
-#impactos.active .delayed {
+#impactos.active .delayed,
+#tecnologia.active .delayed,
+#nos.active .delayed {
   opacity: 1;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -2988,4 +2995,89 @@ Let's go! Slide by slide, make it happen
   -o-transform: translateX(0px);
   -ms-transform: translateX(0px);
   transform: translateX(0px);
+}
+#rocket i:nth-child(1) {
+  font-size: 100px;
+  color: #881A1A;
+  -webkit-transform: translate(0px, 300px);
+  -moz-transform: translate(0px, 300px);
+  -o-transform: translate(0px, 300px);
+  -ms-transform: translate(0px, 300px);
+  transform: translate(0px, 300px);
+  -webkit-transition: -webkit-transform 1s ease 3s;
+  -moz-transition: -moz-transform 1s ease 3s;
+  -o-transition: -o-transform 1s ease 3s;
+  transition: -webkit-transform 1s ease 3s,-moz-transform 1s ease 3s,-o-transform 1s ease 3s,transform 1s ease 3s;
+}
+#rocket i:nth-child(2) {
+  font-size: 100px;
+  color: #881A1A;
+  -webkit-transform: translate(0px, 300px);
+  -moz-transform: translate(0px, 300px);
+  -o-transform: translate(0px, 300px);
+  -ms-transform: translate(0px, 300px);
+  transform: translate(0px, 300px);
+  -webkit-transition: -webkit-transform 1s ease 3.3s;
+  -moz-transition: -moz-transform 1s ease 3.3s;
+  -o-transition: -o-transform 1s ease 3.3s;
+  transition: -webkit-transform 1s ease 3.3s,-moz-transform 1s ease 3.3s,-o-transform 1s ease 3.3s,transform 1s ease 3.3s;
+}
+#rocket i:nth-child(3) {
+  font-size: 100px;
+  color: #881A1A;
+  -webkit-transform: translate(0px, 300px);
+  -moz-transform: translate(0px, 300px);
+  -o-transform: translate(0px, 300px);
+  -ms-transform: translate(0px, 300px);
+  transform: translate(0px, 300px);
+  -webkit-transition: -webkit-transform 1s ease 3.5s;
+  -moz-transition: -moz-transform 1s ease 3.5s;
+  -o-transition: -o-transform 1s ease 3.5s;
+  transition: -webkit-transform 1s ease 3.5s,-moz-transform 1s ease 3.5s,-o-transform 1s ease 3.5s,transform 1s ease 3.5s;
+}
+#rocket i:nth-child(4) {
+  font-size: 100px;
+  color: #881A1A;
+  -webkit-transform: translate(0px, 300px);
+  -moz-transform: translate(0px, 300px);
+  -o-transform: translate(0px, 300px);
+  -ms-transform: translate(0px, 300px);
+  transform: translate(0px, 300px);
+  -webkit-transition: -webkit-transform 1s ease 3.7s;
+  -moz-transition: -moz-transform 1s ease 3.7s;
+  -o-transition: -o-transform 1s ease 3.7s;
+  transition: -webkit-transform 1s ease 3.7s,-moz-transform 1s ease 3.7s,-o-transform 1s ease 3.7s,transform 1s ease 3.7s;
+}
+#rocket i:nth-child(5) {
+  font-size: 100px;
+  color: #881A1A;
+  -webkit-transform: translate(0px, 300px);
+  -moz-transform: translate(0px, 300px);
+  -o-transform: translate(0px, 300px);
+  -ms-transform: translate(0px, 300px);
+  transform: translate(0px, 300px);
+  -webkit-transition: -webkit-transform 1s ease 3.8s;
+  -moz-transition: -moz-transform 1s ease 3.8s;
+  -o-transition: -o-transform 1s ease 3.8s;
+  transition: -webkit-transform 1s ease 3.8s,-moz-transform 1s ease 3.8s,-o-transform 1s ease 3.8s,transform 1s ease 3.8s;
+}
+#rocket i:nth-child(6) {
+  font-size: 100px;
+  color: #881A1A;
+  -webkit-transform: translate(0px, 300px);
+  -moz-transform: translate(0px, 300px);
+  -o-transform: translate(0px, 300px);
+  -ms-transform: translate(0px, 300px);
+  transform: translate(0px, 300px);
+  -webkit-transition: -webkit-transform 1s ease 3.85s;
+  -moz-transition: -moz-transform 1s ease 3.85s;
+  -o-transition: -o-transform 1s ease 3.85s;
+  transition: -webkit-transform 1s ease 3.85s,-moz-transform 1s ease 3.85s,-o-transform 1s ease 3.85s,transform 1s ease 3.85s;
+}
+#rocket.active i {
+  -webkit-transform: translate(1000px, -1000px);
+  -moz-transform: translate(1000px, -1000px);
+  -o-transform: translate(1000px, -1000px);
+  -ms-transform: translate(1000px, -1000px);
+  transform: translate(1000px, -1000px);
 }

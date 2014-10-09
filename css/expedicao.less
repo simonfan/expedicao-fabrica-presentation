@@ -3,6 +3,7 @@ Font faces
  */
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
 
+@import 'font-awesome.css';
 @import 'lesshat.less';
 @import (less) 'animate.css';
 
@@ -164,7 +165,7 @@ Let's go! Slide by slide, make it happen
 }
 
 
-#metodologia, #impactos {
+#metodologia, #impactos, #tecnologia, #nos {
 	h1 {
 		float: left;
 	}
@@ -209,6 +210,66 @@ Let's go! Slide by slide, make it happen
 		img {
 			opacity: 1;
 			.translateX(0px);
+		}
+	}
+}
+
+
+#rocket {
+
+	i:nth-child(1) {
+		font-size: 100px;
+		color: #881A1A;
+
+		.translate(0px 300px);
+		.transition(transform 1s ease 3s);
+	}
+
+	i:nth-child(2) {
+		font-size: 100px;
+		color: #881A1A;
+
+		.translate(0px 300px);
+		.transition(transform 1s ease 3.3s);
+	}
+
+	i:nth-child(3) {
+		font-size: 100px;
+		color: #881A1A;
+
+		.translate(0px 300px);
+		.transition(transform 1s ease 3.5s);
+	}
+
+
+	i:nth-child(4) {
+		font-size: 100px;
+		color: #881A1A;
+
+		.translate(0px 300px);
+		.transition(transform 1s ease 3.7s);
+	}
+
+	i:nth-child(5) {
+		font-size: 100px;
+		color: #881A1A;
+
+		.translate(0px 300px);
+		.transition(transform 1s ease 3.8s);
+	}
+
+	i:nth-child(6) {
+		font-size: 100px;
+		color: #881A1A;
+
+		.translate(0px 300px);
+		.transition(transform 1s ease 3.85s);
+	}
+
+
+	&.active {
+		i {
+			.translate(1000px -1000px);
 		}
 	}
 }
